@@ -1,0 +1,23 @@
+[package]
+name = "udp_rtt_tput"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "udp-latency"
+path = "src/udp-latency.rs"
+
+[[bin]]
+name = "udp-throughput"
+path = "src/udp-throughput.rs"
+
+[dependencies]
+clap = "4.5.4"
+num-derive = "0.4.2"
+num-traits = "0.2.18"
+pnet = "0.34.0"
+pnet_macros = "0.34.0"
+pnet_macros_support = "0.34.0"
+signal-hook = "0.3.17"
